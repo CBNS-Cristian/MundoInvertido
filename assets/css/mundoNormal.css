@@ -13,7 +13,7 @@ body p{
     font-weight: 400;
 }
 header {
-    background: url('/assets/images/backgrounds/fundo-hero.jpg');
+    background: url('https://cbns-cristian.github.io/MundoInvertido/assets/images/backgrounds/fundo-hero.jpg');
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: 100% 200%;
