@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Normal</title>
+
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/mundoNormal.css">
+</head>
+<body>
+    <header>
+        <div class="fundo-geral"></div>
+        <section class="hero-geral">
+            
+            <div class="area-inicial">
+                <div class="logo">
+                    <img src="assets/images/banner/logo.svg" alt="">
+                </div>
+                <div class="hero-descricao">
+                    <p>Uma jornada para quem não tem medo do desconhecido. O caminho para o Mundo invertido é incerto, repleto de obstáculos e perigos. Porém, a recompensa é grande: salvar Hawkings e o mundo todo das garras de Vecna. Você está preparado? Então clique no botão abaixo para entrar no Mundo Invertido! </p>
+                </div>
+                
+                <button><a href="/mundoInvertido.html">INVERTER MUNDOS</a></button>
+                
+            </div>
+
+            <div class="area-destaque">
+                <img src="./assets/images/characters/kids-on-the-bike.svg" alt="" id="criacas-normal">
+                <img src="./assets/images/characters/inverted-world-monster.svg" fill="currentColor" alt="" id="criacas-invertido">
+            </div>
+        </section>
+        
+    </header>
+
+    <main>
+        <section class="sobre-invertido">
+            <div class="sobre-conteudo">
+                <h2>O MUNDO <br> INVERTIDO</h2>
+                <p>O Mundo Invertido parece uma cópia do nosso mundo, mas com criaturas horrendas, tempestades assustadoras, muita escuridão e entidades malignas. Um reino controlado por Vecna, que tem planos de trazer tudo isso ao nosso mundo. </p>
+            </div>
+            <div class="sobre-imagem">
+                <img src="./assets/images/content/inverted-world.png" alt="">
+            </div>
+        </section>
+
+        <section class="stranger-trailer">
+            <div class="stranger-video">
+                <iframe width="290" height="175" src="https://www.youtube.com/embed/b6XKRA2DFQI?si=nZJf-UX3s_DxTUy3&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="stranger-conteudo">
+                <h2>STRANGER <br> THINGS VOL. 4</h2>
+                <p>Mais experientes, os heróis de Stranger Things também precisam enfrentar desafios maiores do que nunca e fazer decisões que vão mudar suas vidas para sempre. Confira ao lado o trailer da quarta temporada. </p>
+            </div>
+        </section>
+
+        <section class="cards-serie">
+                <h2>A SEGUNDA SÉRIE MAIS ASSISTIDA DA NETFLIX</h2>
+                <div class="cards-imagem">
+                    <div class="img1"></div>
+                    <div class="img2"></div>
+                    <div class="img3"></div>
+                </div>
+        </section>
+    </main>
+
+    <section class="geral-ded">
+        <section class="area-DeD">
+                <div class="area-info">
+                    <h2>O CLUBE DUGEONS & DRAGONS</h2>
+                    <p>Para deter Vecna, os heróis de Stranger Things também precisam de você. <br> O Clube de D&D mais famoso de Hawkings está com vagas abertas para sua próxima aventura. Se você é destemido, gosta de desafios e não tem medo de rodar o D20, chegou a hora de se inscrever para fazer parte da nova campanha. </p>
+                </div>
+            <div class="area-form">
+                <div class="frase-destaque">
+                    <h3>ENTRE PARA O CLUBE DE D&D E TENHA EXPERIÊNCIAS DE <span>OUTRO MUNDO</span></h3>
+                </div>
+                 <form action="" reset>
+                    <label for="">Nome Completo</label>
+                    <input type="text">
+                    <label for="">E-mail</label>
+                    <input type="email">
+        
+                     <label for="">Nível</label>
+                    <input type="text">
+                    <label for="">Personagem</label>
+                    <textarea name="" id=""></textarea>
+        
+                    <input type="submit" value="ME INSCREVER" id="inscrever">
+                 </form>
+            </div>
+        </section>
+    </section>
+
+    <footer>
+
+    </footer>
+
+        <script>
+        function tocarAudio(){
+            const audio = new Audio('/assets/musics/normal-world.mpeg');
+
+            audio.play()
+            audio.loop = true
+        }
+       
+        document.addEventListener('DOMContentLoaded', tocarAudio)
+        
+    </script>
+</body>
+</html>

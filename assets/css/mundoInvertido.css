@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Rubik+Glitch&display=swap');
+
+
+body {
+     background: linear-gradient(to bottom, #050000, #130404, #130101BA)
+}
+body h2{
+    color: #CF0F0F;
+    font-family: "Rubik Glitch", system-ui;
+}
+body p{
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+}
+header {
+    background: url('/assets/images/backgrounds/fundo-hero.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100% 200%;
+    height: 975px;
+    margin-bottom: 280px;
+    position: relative;
+}
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #050000;
+    opacity: 0.8;
+    z-index: 1; 
+}
+p{
+   color: #FFFFFF;
+}
+.hero-geral {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1500px;
+    gap: 60px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+.area-inicial{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 10px;
+    gap: 35px;
+}
+.area-inicial .logo{
+    transform: rotateX(180deg);
+}
+.hero-descricao{
+    font-size: 1.1rem;
+    text-align: center;
+    max-width: 850px;
+    margin: 0 auto;
+    transform: rotateX(180deg);
+    color: white;
+}
+
+.area-inicial button{
+    background-color: transparent;
+    border: 3px solid #CF0F0F;
+    background-color: #CF0F0F;
+}
+.area-inicial a{
+    display: block;
+    padding: 15px 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+    font-family: "Rubik Glitch", system-ui;
+    font-size: 1.2rem;
+}
+.area-destaque{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transform: rotateX(180deg);
+}
+
+#criancas-invertido{
+    transform: rotateX(180deg);
+    filter: invert(99%) sepia(0%) saturate(1878%) hue-rotate(351deg) brightness(116%) contrast(57%)
+}
+#criancas-normal{
+    filter: invert(99%) sepia(0%) saturate(1878%) hue-rotate(351deg) brightness(116%) contrast(17%)
+}
+
+/* Sobre Invertido */
+.sobre-invertido,
+.stranger-trailer{
+    max-width: 1500px;
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    box-sizing: border-box;
+}
+.sobre-conteudo h2,
+.stranger-conteudo h2{
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+.sobre-conteudo{
+    max-width: 600px;
+    text-align: justify;
+}
+.sobre-imagem img{
+    max-width: 330px;
+    transform: rotate(180deg);
+}
+.stranger-trailer{
+    margin: 30px auto;
+    padding: 25px 10px;
+    text-align: right;
+}
+.stranger-video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -15px 15px 0 #CF0F0F;
+}
+.stranger-conteudo{
+    max-width: 600px;
+}
+.cards-serie{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 1000px;
+    gap: 40px;
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.cards-serie h2{
+    text-align: left;
+    font-size: 3rem;
+    max-width: 750px;   
+}
+.cards-imagem{
+    display: flex;
+    gap: 50px;
+    position: relative;
+    align-items: center;
+}
+.cards-imagem::before{
+    content: "";
+    position: absolute;
+    background-image: url('/assets/images/backgrounds/lamps-inverted.png');
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    width: 42%;
+    right: 0;
+    bottom: -20px;
+    height: 140%;
+    z-index: -1;
+}
+
+.cards-imagem div{
+    width: 200px;
+    height: 200px;
+    box-sizing: border-box;
+    box-shadow: 0 0 0 10px #FFF,
+                inset 0 0 0 5px #FFF;
+    border: 1px solid #CF0F0F;
+    transform: rotate(180deg);
+}
+.img1,
+.img2,
+.img3{
+    background-image: url('/assets/images/content/serie-image-01.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+.img2{
+    background-image: url('/assets/images/content/serie-image-02.png');
+}
+.img3{
+    background-image: url('/assets/images/content/serie-image-03.png');
+}
+
+.geral-ded{
+    position: relative;
+    isolation: isolate; /* Cria novo contexto de empilhamento */
+}
+.geral-ded::before{
+    content: '';
+    background:
+        url('/assets/images/backgrounds/florest.png');
+    opacity: 0.2;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    display: block;
+    position: absolute;
+     z-index: -1;
+}
+.area-DeD{
+    max-width: 1500px;
+    margin: 30px auto;
+    margin-bottom: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    gap: 25px;
+    position: relative;
+    z-index: 2;
+}
+.area-info{
+    text-align: center;
+    max-width: 850px;
+}
+.area-info h2{
+    font-size: 3rem;
+    max-width: 600px;
+    margin: 30px auto;
+}
+.area-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+form{
+    width: 500px;
+    height: 500px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    background-color: #CF0F0F;
+    color: white;
+    box-shadow: 30px 25px 0  #fff;
+}
+form input{
+    height: 40px;
+    background-color: #222222;
+    border: 2px solid white;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    color: white;
+    text-indent: 15px;
+}
+form label{
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+#inscrever{
+    width: 200px;
+    height: 50px;
+    padding: 15px;
+    display: flex;
+    font-size: 1.1rem;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    color: white;
+    text-indent: 0;
+}
+form textarea{
+    min-height: 80px;
+    max-height: 100px;
+    margin-bottom: 30px;
+    background-color: #222222;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    color: white;
+    text-indent: 15px;
+}
+form input:focus,
+form textarea:focus{
+    border-color: none;
+}
+.frase-destaque{
+    font-size: 2.5rem;
+    max-width: 350px;
+    font-family: "Archivo Black", sans-serif;
+    color: #fff;
+}
+.frase-destaque span{
+    color: #CF0F0F;
+}
+footer{
+    background-color: #B5BBBF;
+    height: 50px;
+}
